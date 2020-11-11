@@ -1,5 +1,5 @@
 
-Notes about things to do to the code after it's been completed.
+### Notes about things to do to the code after it's been completed.
 
 * Add integers to the type system.
 * Add a "%" operator.
@@ -10,3 +10,7 @@ possible without making a lot of changes. Decision required.
 * Do string formatting as the challenges section in chapter 16 talks about. This involves changing the way that
 variables are stored and accessed.
 * Change the Simple language to be a duck-typed language instead of a strong typed language.
+* Make the VM stack dynamic.
+* Support != <= >=
+
+See chapter 18 for how to add a type.
