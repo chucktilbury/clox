@@ -5,7 +5,10 @@ OBJS	=	main.o \
 			chunk.o \
 			debug.o \
 			memory.o \
-			value.o
+			value.o \
+			vm.o \
+			compiler.o \
+			scanner.o
 
 COPTS	=	-g -Wall -Wextra
 

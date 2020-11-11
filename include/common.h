@@ -7,5 +7,10 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <string.h>
+#include <ctype.h>
+
+#define DEBUG_TRACE_EXECUTION
+#define DEBUG_PRINT_CODE
 
 #endif
