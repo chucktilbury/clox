@@ -12,5 +12,6 @@ variables are stored and accessed.
 * Change the Simple language to be a duck-typed language instead of a strong typed language.
 * Make the VM stack dynamic.
 * Support != <= >=
+* Add strings "+" operator for other types. (ch 19)
 
 See chapter 18 for how to add a type.
