@@ -15,7 +15,8 @@ OBJLST	=	main.o \
 			vm.o \
 			compiler.o \
 			scanner.o \
-			object.o
+			object.o \
+			table.o
 
 OBJS 	=	$(foreach item, $(OBJLST), $(addprefix $(LIBDIR)/, $(item)))
 SRCS	=	$(foreach item, $(OBJLST:.o=.c), $(addprefix $(SRCDIR)/, $(item)))
