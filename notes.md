@@ -16,3 +16,4 @@ variables are stored and accessed.
 * Make all of the items in the type system "objects"?
 
 See chapter 18 for how to add a type.
+Understand strings before adding any new code.
