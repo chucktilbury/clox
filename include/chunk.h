@@ -25,6 +25,9 @@ typedef enum {
     OP_GREATER,
     OP_LESS,
     OP_PRINT,
+    OP_LOOP,
+    OP_JUMP,
+    OP_JUMP_IF_FALSE,
     OP_RETURN,
 } OpCode;
 
