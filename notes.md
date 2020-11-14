@@ -16,6 +16,7 @@ variables are stored and accessed.
 * Make all of the items in the type system "objects"?
 * Implement constant vars. Challenge in chapeter 22.
 * Implement break and continue.
+* Implement switch/case.
 
 See chapter 18 for how to add a type.
 Understand strings before adding any new code.
