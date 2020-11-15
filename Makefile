@@ -21,16 +21,21 @@ OBJLST	=	main.o \
 OBJS 	=	$(foreach item, $(OBJLST), $(addprefix $(LIBDIR)/, $(item)))
 SRCS	=	$(foreach item, $(OBJLST:.o=.c), $(addprefix $(SRCDIR)/, $(item)))
 
-DEBUG	=	-g -O0
+ifeq ($(DEBUG),1)
+	DOPTS	=	-g -Og
+else
+	DOPTS	=	-Ofast
+endif
+
 COPTS	=	-Wall -Wextra -I $(INCDIR)
 CC		=	gcc
 
 $(LIBDIR)%.o: $(SRCDIR)%.c
-	$(CC) $(COPTS) $(DEBUG) -c $< -o $@
+	$(CC) $(COPTS) $(DOPTS) -c $< -o $@
 
 
 $(TARGET): $(OBJS)
-	$(CC) $(COPTS) $(DEBUG) $^ -o $@
+	$(CC) $(COPTS) $(DOPTS) $^ -o $@
 
 clean:
 	-$(RM) $(OBJS) $(TARGET)
