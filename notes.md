@@ -1,6 +1,10 @@
 
 ### Notes about things to do to the code after it's been completed.
 
+* Add multi-line comments
+* Make the IP a 32 bit value.
+* Use readline for repl()
+* Add command line parser.
 * Add integers to the type system.
 * Add a "%" operator.
 * Add multi-line comments to the scanner.
@@ -17,6 +21,8 @@ variables are stored and accessed.
 * Implement constant vars. Challenge in chapeter 22.
 * Implement break and continue.
 * Implement switch/case.
+* Implement compile-only option that writes the byte code to stdout or a file.
+  * Look at baking a linker for bytecode.
 
 See chapter 18 for how to add a type.
 Understand strings before adding any new code.
